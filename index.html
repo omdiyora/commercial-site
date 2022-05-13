@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <h1 class="flex">Honest Restaurant</h1>
+    <!-- Products -->
+    <div class="container">
+        <div class="products">
+            <div class="product_1">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/dosa.jpg" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Dosa
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="dosa">200</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_dosa" onclick="checkdosa()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_2">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/pizza.jpg" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Pizza
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="pizza">250</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_Pizza" onclick="pizza()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_3">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/burger.jpg" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Burger
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="burger">100</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_Burger" onclick="burger()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_4">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/pav-bhaji.jpg" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Pav-Bhaji
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="pav-bhaji">90</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_PavBhaji" onclick="pavbhaji()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_5">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/hotdog.webp" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Hot dog
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="hotDog">100</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_Hotdog" onclick="hotDog()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_6">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/sandwich.webp" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Sandwich
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="sandwich">70</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_Sandwich" onclick="sandwich()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_7">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/icecream.jpg" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Ice Cream
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="iceCream">200</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_IceCream" onclick="iceCream()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_8">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/paratha.jpeg" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Paratha
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="paratha">150</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_Paratha" onclick="paratha()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_9">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/mexican.png" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        Mexican
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="mexican">70</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_Mexican" onclick="mexican()">
+                    </div>
+                </div>
+            </div>
+            <div class="product_10">
+                <div class="left">
+                    <div class="image_box">
+                        <img src="images/French_Fries.JPG" alt="dosa">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="item_name">
+                        <label for="name">Item Name : </label>
+                        French Fries
+                    </div>
+                    <div class="item_price">
+                        <label for="name">Price : </label>
+                        <span  id="frenchFries">70</span>₹
+                    </div>
+                    <div class="item_check">
+                        <label for="">Order Now</label>
+                        <input type="checkbox" name="check" id="chkbox_FrenchFries" onclick="frenchFries()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container d_flex">
+            <div class="totalbill">
+                <p>Total Bill : </p>
+            </div>
+            <div class="bill_gst d_flex">
+                <label for="">Your Order : </label><p id="billAmount"></p>
+            </div>
+            <div class="plus">
+                +
+            </div>
+            <div class="gst d_flex">
+                <label for="">Gst : </label><p><span id="gst">5</span>%</p>
+            </div>
+            <div class="plus">
+                =
+            </div>
+            <div class="gst d_flex">
+                <p id="total"></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="btn">
+                <button onclick="bill()">Generate Bill</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        var amount = document.getElementById('billAmount');
+amount.innerHTML = 0;
+var totalPrice = 0;
+// Final Bill
+function bill() {
+    let total = document.getElementById('total');
+    let gst = document.getElementById('gst').innerHTML;
+
+    console.log(gst);
+
+    let gst_number = amount.innerHTML * (gst/100);
+    console.log(gst_number);
+
+    console.log(amount.innerHTML);
+    let finalBill = parseInt(amount.innerHTML) + parseInt(gst_number);
+    total.innerHTML = parseInt(finalBill)
+}
+function checkdosa() {
+    let dosa = document.getElementById('chkbox_dosa');
+    let dosaPrice = document.getElementById('dosa').innerHTML;
+    totalPrice = amount.innerHTML;
+
+
+    if (dosa.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(dosaPrice);
+    }
+    else {
+        amount.innerHTML = parseInt(totalPrice) - parseInt(dosaPrice);
+    }
+}
+
+function pizza() {
+    let pizza = document.getElementById('chkbox_Pizza');
+    let pizzaPrice = document.getElementById('pizza').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (pizza.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(pizzaPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(pizzaPrice);
+    }
+}
+function burger() {
+    let burger = document.getElementById('chkbox_Burger');
+    let burgerPrice = document.getElementById('burger').innerHTML;
+    console.log(burgerPrice);
+    totalPrice = amount.innerHTML;
+
+    if (burger.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(burgerPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(burgerPrice);
+    }
+}
+function pavbhaji() {
+    let pavbhaji = document.getElementById('chkbox_PavBhaji');
+    let pavbhajiPrice = document.getElementById('pav-bhaji').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (pavbhaji.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(pavbhajiPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(pavbhajiPrice);
+    }
+}
+function hotDog() {
+    let hotDog = document.getElementById('chkbox_Hotdog');
+    let hotDogPrice = document.getElementById('hotDog').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (hotDog.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(hotDogPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(hotDogPrice);
+    }
+}
+function sandwich() {
+    let sandwich = document.getElementById('chkbox_Sandwich');
+    let sandwichPrice = document.getElementById('sandwich').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (sandwich.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(sandwichPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(sandwichPrice);
+    }
+}
+function iceCream() {
+    let iceCream = document.getElementById('chkbox_IceCream');
+    let iceCreamPrice = document.getElementById('iceCream').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (iceCream.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(iceCreamPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(iceCreamPrice);
+    }
+}
+function paratha() {
+    let paratha = document.getElementById('chkbox_Paratha');
+    let parathaPrice = document.getElementById('paratha').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (paratha.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(parathaPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(parathaPrice);
+    }
+}
+function mexican() {
+    let mexican = document.getElementById('chkbox_Mexican');
+    let mexicanPrice = document.getElementById('mexican').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (mexican.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(mexicanPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(mexicanPrice);
+    }
+}
+function frenchFries() {
+    let frenchFries = document.getElementById('chkbox_FrenchFries');
+    let frenchFriesPrice = document.getElementById('frenchFries').innerHTML;
+    totalPrice = amount.innerHTML;
+
+    if (frenchFries.checked == true) {
+        amount.innerHTML = parseInt(totalPrice) + parseInt(frenchFriesPrice);
+    }
+    else{
+        amount.innerHTML = parseInt(totalPrice) - parseInt(frenchFriesPrice);
+    }
+}
+    </script>
+</body>
+
+</html>

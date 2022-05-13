@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+}
+
+.container{
+    width: 1100px;
+    margin: auto;
+}
+.d_flex{
+    display: flex;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    /* padding: 15px 0; */
+    font-size: 50px;  
+    position: fixed; 
+    color: black;
+    background-color: white;
+    /* z-index: 1;  */
+}
+.products{
+    /* width: 100%;  */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    padding: 150px 0;
+}
+.product_1, .product_2 , .product_3, .product_4, .product_5, .product_6, .product_7, .product_8, .product_9, .product_10{
+    /* width: 50%; */
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+    background-color: #fca311;
+}
+.product_1 .left,.product_2 .left,.product_3 .left,.product_4 .left,.product_5 .left,.product_6 .left,.product_7 .left,.product_8 .left,.product_9 .left,.product_10 .left{
+    width: 40%;
+    height: 100%;
+    /* background-color: black; */
+    float: left;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_1 .right, .product_2 .right, .product_3 .right, .product_4 .right, .product_5 .right, .product_6 .right, .product_7 .right, .product_8 .right, .product_9 .right, .product_10 .right{
+    width: 60%;
+    height: 100%;
+    float: right;
+    color: white;
+    /* margin-left: 5px; */
+    /* background-color: silver; */
+    padding: 15px 15px 15px 5px;
+}
+.image_box{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item_name,.item_price,.item_check{
+    width: 100%;
+    height: 50px;
+    padding: 7px 0;
+}
+label{
+    color: #141c28;
+    font-size: larger;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;    
+}
+
+footer h1{
+    text-align: left;
+}
+.bill_gst{
+    padding: 18px 0;
+}
+.bill_gst p{
+    font-size: large;
+    padding: 0 20px;
+    width: 70px;
+    font-size: 22px;
+    overflow: hidden;
+    margin: 0 7px;
+}
+.totalbill p{
+    margin: 0 7px;
+    padding: 10px 15px 10px 0;
+    font-size: 40px;
+    color: white;
+}
+
+.plus{
+    font-size: xx-large;
+    padding: 15px;
+    color: white;
+}
+.gst{
+    padding: 18px 15px;
+}
+.gst p{
+    font-size: 22px;
+    color: black;
+    padding: 4px 15px;
+}
+
+.bill_gst label, .gst label{
+    color: black;
+    font-size: x-large;
+}
+
+.total{
+    width: 300px;
+    text-align: end;
+    background-color: aliceblue;
+    color: black;
+}
+
+.btn{
+    width: 80%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.btn button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    font-size: large;
+}
+/* Media query */
+
+@media screen and (max-width:600px) {
+    .products{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        padding-top: 100px;
+    }
+    
+}
+
+@media screen and (min-width:1400px) {
+    .container{
+        width: 1400px;
+        margin: auto;
+    }
+}
